@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestilling av kinobiletter</title>
+    <!-- Inkludering av Bootstrap CSS-fil -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stilark for tilpasning av grensesnittet -->
     <style>
         .form-group {
             margin-bottom: 10px;
@@ -42,8 +44,11 @@
     <div class="row">
         <div class="col-md-6">
             <h1 class="mt-5 mb-4">Bestilling av kinobiletter</h1>
+            <!-- Skjema for å legge inn billettbestilling -->
             <form>
+                <!-- Velg film -->
                 <div class="form-group">
+                    <!-- Dropdown-liste for å velge film -->
                     <label for="movieSelect">Velg film:</label>
                     <select id="movieSelect" class="form-control">
                         <option value="Velg film her">Velg film her</option>
@@ -51,13 +56,17 @@
                         <option value="Avatar 2">Avatar 2</option>
                         <option value="Innsiden Ut">Innsiden ut</option>
                     </select>
+                    <!-- Feilmelding for valg av film -->
                     <div id="movieSelectError" class="error mt-1"></div>
                 </div>
+                <!-- Antall billetter -->
                 <div class="form-group">
                     <label for="quantity">Antall:</label>
+                    <!-- Inndatafelt for antall billetter -->
                     <div class="square-input">
                         <input type="text" class="form-control" id="quantity" pattern="[0-9]*" required>
                     </div>
+                    <!-- Feilmelding for antall billetter -->
                     <div id="quantityError" class="error mt-1"></div>
                 </div>
                 <div class="form-group">
@@ -80,16 +89,21 @@
                     <input type="email" class="form-control" id="email" required>
                     <div id="emailError" class="error mt-1"></div>
                 </div>
+                <!-- Knapp for å kjøpe billett -->
                 <button id="kjopBillettBtn" class="btn btn-primary">Kjøp billett</button>
             </form>
+            <!-- Overskrift for liste over billetter -->
             <h2 class="mt-4">Alle billetter</h2>
+            <!-- Liste for å vise alle billetter -->
             <ul id="billettListe"></ul>
+            <!-- Knapp for å slette alle billetter -->
             <button id="slettAlleBilletterBtn" class="btn btn-danger mt-3">Slett alle billetter</button>
         </div>
     </div>
 </div>
 <!-- Inkludering av jQuery bibliotek -->
 <script src="script.js"></script>
+<!-- Skript for å behandle billettbestilling -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 package com.example.oblig3webutvikling;
-
+//Oppretter en klasse kallt Kunde
 public class Kunde {
     private String film;
     private String fornavn;
@@ -9,6 +9,7 @@ public class Kunde {
 
     private String epost;
 
+    // Konstruktør for å opprette et Kunde-objekt med spesifiserte verdier
     public Kunde(String film,String fornavn,
                  String etternavn,int antall,
                  int telefonnr,String epost){
@@ -19,7 +20,9 @@ public class Kunde {
         this.epost=epost;
         this.film=film;
     }
+    // Tom konstruktør for å kunne opprette Kunde-objekter uten initialverdier
     public Kunde(){}
+    //Bruker get- og set-metoder på alle attributtene for å hente verdien
     public String getFornavn() {
         return fornavn;
     }

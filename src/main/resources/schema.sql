@@ -1,5 +1,5 @@
 CREATE TABLE Kunde
---Kode for å opprette tabellen Kjoper
+--Kode for å opprette tabellen Kunde
 (
     id INTEGER AUTO_INCREMENT NOT NULL, --hver bestilling har en unik id
     film VARCHAR(255) NOT NULL,
