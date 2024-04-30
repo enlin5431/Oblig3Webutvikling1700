@@ -1,4 +1,4 @@
-CREATE TABLE kunde
+CREATE TABLE Kunde
 --Kode for å opprette tabellen Kjoper
 (
     id INTEGER AUTO_INCREMENT NOT NULL, --hver bestilling har en unik id
