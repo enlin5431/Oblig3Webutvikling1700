@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestilling av kinobiletter</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+            width: 80px;
+        }
+
+        .square-input {
+            width: 35px;
+            height: 20px;
+            position: relative;
+        }
+
+        .square-input input {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="mt-5 mb-4">Bestilling av kinobiletter</h1>
+            <form>
+                <div class="form-group">
+                    <label for="movieSelect">Velg film:</label>
+                    <select id="movieSelect" class="form-control">
+                        <option value="Velg film her">Velg film her</option>
+                        <option value="James Bond">James Bond</option>
+                        <option value="Avatar 2">Avatar 2</option>
+                        <option value="Innsiden Ut">Innsiden ut</option>
+                    </select>
+                    <div id="movieSelectError" class="error mt-1"></div>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Antall:</label>
+                    <div class="square-input">
+                        <input type="text" class="form-control" id="quantity" pattern="[0-9]*" required>
+                    </div>
+                    <div id="quantityError" class="error mt-1"></div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Fornavn:</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                    <div id="firstNameError" class="error mt-1"></div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Etternavn:</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                    <div id="lastNameError" class="error mt-1"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Telefonnr:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" pattern="[0-9]{8}" required>
+                    <div id="phoneNumberError" class="error mt-1"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Epost:</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div id="emailError" class="error mt-1"></div>
+                </div>
+                <button id="kjopBillettBtn" class="btn btn-primary">Kjøp billett</button>
+            </form>
+            <h2 class="mt-4">Alle billetter</h2>
+            <ul id="billettListe"></ul>
+            <button id="slettAlleBilletterBtn" class="btn btn-danger mt-3">Slett alle billetter</button>
+        </div>
+    </div>
+</div>
+<!-- Inkludering av jQuery bibliotek -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
