@@ -59,6 +59,7 @@ function kjopBillett() {
         telefonNr: telefonNr,
         epost: epost
     };
+    const kunde = new Kunde(1, valgtFilm, fornavn, etternavn, antall, telefonNr, epost);
 
     // Send billettobjektet til serveren
     lagreBillett(billett);

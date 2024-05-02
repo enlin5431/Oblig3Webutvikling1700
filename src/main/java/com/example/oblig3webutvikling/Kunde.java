@@ -1,18 +1,20 @@
 package com.example.oblig3webutvikling;
 //Oppretter en klasse kallt Kunde
 public class Kunde {
+    private int id;
     private String film;
     private String fornavn;
     private String etternavn;
     private int antall;
     private int telefonnr;
-
     private String epost;
 
+
     // Konstruktør for å opprette et Kunde-objekt med spesifiserte verdier
-    public Kunde(String film,String fornavn,
+    public Kunde(int id, String film,String fornavn,
                  String etternavn,int antall,
                  int telefonnr,String epost){
+        this.id=id;
         this.fornavn=fornavn;
         this.etternavn=etternavn;
         this.antall=antall;
@@ -23,6 +25,12 @@ public class Kunde {
     // Tom konstruktør for å kunne opprette Kunde-objekter uten initialverdier
     public Kunde(){}
     //Bruker get- og set-metoder på alle attributtene for å hente verdien
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id=id;
+    }
     public String getFornavn() {
         return fornavn;
     }
