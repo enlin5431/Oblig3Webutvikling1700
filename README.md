@@ -17,3 +17,6 @@ Epost-feltet valideres automatisk som en gyldig e-postadresse.
 
 ## Oppstart:
 Åpne "index.html" i en valgfri nettleser for å bruke applikasjonen
+
+## Link til youtube
+
