@@ -34,8 +34,8 @@ function kjopBillett() {
         isValid = false;
     }
 
-    const telefonnrRegex = /^[0-9]{8}$/;
-    if (!telefonnrRegex.test(telefonNr)) {
+    const telefonNrRegex = /^[0-9]{8}$/;
+    if (!telefonNrRegex.test(telefonNr)) {
         $('#phoneNumberError').text('Du må oppgi gyldig telefonnummer.');
         isValid = false;
     }

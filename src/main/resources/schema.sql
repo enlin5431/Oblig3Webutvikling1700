@@ -6,7 +6,7 @@ CREATE TABLE Kunde
     fornavn VARCHAR(255) NOT NULL,
     etternavn VARCHAR(255) NOT NULL,
     antall INT NOT NULL,
-    telefonnr INT NOT NULL,
+    telefonNr INT NOT NULL,
     epost VARCHAR(255) NOT NULL,
 
     --All annen informasjon

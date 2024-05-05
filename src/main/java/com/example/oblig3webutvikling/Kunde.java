@@ -6,19 +6,19 @@ public class Kunde {
     private String fornavn;
     private String etternavn;
     private int antall;
-    private int telefonnr;
+    private int telefonNr;
     private String epost;
 
 
     // Konstruktør for å opprette et Kunde-objekt med spesifiserte verdier
     public Kunde(int id, String film,String fornavn,
                  String etternavn,int antall,
-                 int telefonnr,String epost){
+                 int telefonNr,String epost){
         this.id=id;
         this.fornavn=fornavn;
         this.etternavn=etternavn;
         this.antall=antall;
-        this.telefonnr=telefonnr;
+        this.telefonNr=telefonNr;
         this.epost=epost;
         this.film=film;
     }
@@ -55,12 +55,12 @@ public class Kunde {
         this.antall = antall;
     }
 
-    public int getTelefonnr() {
-        return telefonnr;
+    public int getTelefonNr() {
+        return telefonNr;
     }
 
-    public void setTelefonnr(int telefonnr) {
-        this.telefonnr = telefonnr;
+    public void setTelefonNr(int telefonNr) {
+        this.telefonNr = telefonNr;
     }
 
     public String getEpost() {

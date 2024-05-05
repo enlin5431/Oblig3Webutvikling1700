@@ -15,10 +15,10 @@ public class BestillingsRepository {
 
     // Metode for å lagre en kunde i databasen
     public void lagreKunde(Kunde innKunde){
-        String sql = "INSERT INTO Kunde (antall, film, fornavn, etternavn, telefonNr, epost) VALUES(?,?,?,?,?,?)";
+        String sql = "INSERT INTO Kunde(antall, film, fornavn, etternavn, telefonNr, epost)VALUES(?,?,?,?,?,?)";
         // Utfør SQL-oppdatering med data fra innKunde-objektet
         db.update(sql, innKunde.getAntall(), innKunde.getFilm(), innKunde.getFornavn(),
-                innKunde.getEtternavn(), innKunde.getTelefonnr(), innKunde.getEpost());
+                innKunde.getEtternavn(), innKunde.getTelefonNr(), innKunde.getEpost());
     }
     // Metode for å hente alle kunder fra databasen
     public List<Kunde> hentAlleFilmer(){
