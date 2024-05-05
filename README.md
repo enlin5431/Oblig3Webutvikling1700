@@ -19,4 +19,4 @@ Epost-feltet valideres automatisk som en gyldig e-postadresse.
 Åpne "index.html" i en valgfri nettleser for å bruke applikasjonen
 
 ## Link til youtube
-
+https://youtube.com/shorts/l72SZUw-X3Y
